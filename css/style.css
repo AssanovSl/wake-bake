@@ -43,6 +43,13 @@
     height: 100%;
 }
 
+.title {
+    font-family: 'Gabriola';
+    font-size: 74px;
+    line-height: 0.82;
+    color: var(--accent-text);
+}
+
 .button {
     width: 100%;
     display: flex;
@@ -73,16 +80,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
+
     opacity: 1;
     visibility: hidden;
     transition: all .6s;
 }
-.body--opened-modal{
+
+.body--opened-modal {
     overflow: hidden;
 }
 
-.body--opened-modal .modal{
+.body--opened-modal .modal {
 
     opacity: 1;
     visibility: visible;
@@ -123,7 +131,7 @@
     margin-bottom: 10px;
 }
 
-.modal__form-label{
+.modal__form-label {
     margin-bottom: 10px;
 }
 
@@ -131,7 +139,8 @@
     position: relative;
     display: block;
 }
-.field span{
+
+.field span {
     position: absolute;
     top: 12PX;
     left: 28px;
@@ -155,22 +164,25 @@
     font-size: 16px;
     transition: all .4s;
 }
-.field__input::placeholder{
+
+.field__input::placeholder {
     color: #ac907a;
     transition: all .4s;
-} 
-.field__input:hover{
+}
+
+.field__input:hover {
     border-color: var(--accent-color);
 }
-.field__input:hover::placeholder{
-    color: var(--accent-color);
-} 
 
-.field__input:focus{
+.field__input:hover::placeholder {
+    color: var(--accent-color);
+}
+
+.field__input:focus {
     padding: 26px 41px 12px 28px;
 }
 
-.field__input:focus + span{
+.field__input:focus+span {
     opacity: 1;
     visibility: visible;
 }
@@ -334,10 +346,6 @@
 }
 
 .hero__title {
-    font-family: 'Gabriola';
-    font-size: 74px;
-    line-height: 0.82;
-    color: var(--accent-text);
     margin-bottom: 30px;
 }
 
@@ -583,12 +591,6 @@
     opacity: 1;
 }
 
-.about__title {
-    font-family: "Gabriola";
-    font-size: 74px;
-    line-height: 0.82;
-    color: var(--accent-text);
-}
 
 .about__heading {
     margin-bottom: 30px;
@@ -626,6 +628,54 @@
     justify-content: center;
 }
 
+/*========================ABOUT=======================*/
+
+.main-education {}
+
+.education {}
+
+.container {}
+
+.education__top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.education__heading {}
+
+.education__title {
+    margin-bottom: 20px;
+}
+
+.title {}
+
+.education__text {}
+
+.tab-buttons {
+    display: flex;
+    align-items: flex-end;
+}
+
+.tab-buttons__item {
+    border-radius: 100px;
+    height: 52px;
+    box-shadow: 0 4px 20px 0 rgba(206, 195, 185, 0.3);
+    background: var(--general-bg);
+    padding: 14px 30px;
+    margin: 10px 0 10px 26.5px;
+    transition: all .4s;
+}
+
+.tab-buttons__item:hover{
+    background: var(--accent-bg);
+    box-shadow:none;
+}
+
+.tab-buttons__item:last-child{
+    margin-right: 0;
+}
+
+.tab-buttons__link {}
 
 /*==================МЕДИАЗАПРОСЫ========================*/
 
@@ -719,7 +769,7 @@
         padding-bottom: 80px;
     }
 
-    .hero__title {
+    .title {
         font-size: 12vw;
     }
 
